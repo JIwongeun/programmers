@@ -2,11 +2,11 @@ def solution(strArr):
     
     ans = []
     
-    for i in range(len(strArr)):
+    for i, s in enumerate(strArr):
         if i % 2 ==0:
-            ans.append(strArr[i].lower())
+            ans.append(s.lower())
         else:
-            ans.append(strArr[i].upper())
+            ans.append(s.upper())
         
     
     
