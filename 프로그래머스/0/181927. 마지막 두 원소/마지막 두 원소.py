@@ -1,7 +1,7 @@
 def solution(num_list):
     answer = num_list
     
-    ln, pn = num_list[len(num_list)-1], num_list[len(num_list)-2]
+    ln, pn = num_list[-1], num_list[-2]
     
     if ln > pn:
         answer.append(ln-pn)
