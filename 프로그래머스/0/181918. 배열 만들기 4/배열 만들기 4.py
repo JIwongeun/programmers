@@ -1,13 +1,9 @@
 def solution(arr):
     stk = []
-    i=0
     
-    while i<len(arr):
-        if not stk or stk[-1] < arr[i]:
-            stk.append(arr[i])
-            i+=1
-        else:
+    for i in range(len(arr)):
+        while stk and stk[-1]>=arr[i]:
             stk.pop()
+        stk.append(arr[i])
           
-            
     return stk
