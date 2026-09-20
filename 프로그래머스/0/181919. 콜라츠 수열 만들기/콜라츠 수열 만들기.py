@@ -2,7 +2,7 @@ def solution(n):
     
     answer = [n]
     
-    while(1):
+    while n>1:
         if n%2==0:
             n=n/2
         else:
@@ -10,8 +10,6 @@ def solution(n):
         
         answer.append(n)
         
-        if n==1:
-            break
-    
+        
     
     return answer
