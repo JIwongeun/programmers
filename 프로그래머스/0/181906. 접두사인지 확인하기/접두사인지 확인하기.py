@@ -1,9 +1,3 @@
 def solution(my_string, is_prefix):
     
-    key = []
-    
-    for i in range(len(my_string)):
-        key.append(my_string[:i+1])
-        
-    
-    return 1 if is_prefix in key else 0
+    return int(my_string.startswith(is_prefix))
