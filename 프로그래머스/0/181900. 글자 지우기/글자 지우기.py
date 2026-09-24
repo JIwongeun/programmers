@@ -1,10 +1,5 @@
 def solution(my_string, indices):
     
-    answer=[]
-    for i in range(len(my_string)):
-        if i in indices:
-            continue
-        else:
-            answer.append(my_string[i])
+
     
-    return "".join(answer)
+    return "".join([s for i, s in enumerate(my_string) if i not in indices])
