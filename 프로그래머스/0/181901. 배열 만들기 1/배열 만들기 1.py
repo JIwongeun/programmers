@@ -1,3 +1,3 @@
 def solution(n, k):
-    answer = [i*k for i in range(1, (n//k)+1)]
-    return answer
+    
+    return [n for n in range(k, n+1, k)]
