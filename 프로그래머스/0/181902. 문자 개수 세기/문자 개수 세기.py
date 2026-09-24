@@ -1,10 +1,10 @@
 def solution(my_string):
-    answer = []
+    answer = [0]*52
     
-    for i in range(0, 26):
-        answer.append(my_string.count(chr(ord('A') + i)))
-        
-    for i in range(0, 26):
-        answer.append(my_string.count(chr(ord('a') + i)))
+    for x in my_string:
+        if x.isupper():
+            answer[ord(x)-65] +=1
+        else:
+            answer[ord(x)-71]+=1
     
     return answer
