@@ -1,7 +1,5 @@
 def solution(arr, intervals):
-    answer = []
+    a,b = intervals[0]
+    c,d = intervals[1]
     
-    for rg in intervals:
-        for i in arr[rg[0]:rg[1]+1]:
-            answer.append(i)
-    return answer
+    return arr[a:b+1] + arr[c:d+1]
